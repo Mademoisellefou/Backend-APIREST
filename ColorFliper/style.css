@@ -1,0 +1,18 @@
+main {
+  min-height: calc(100vh-3rem);
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+}
+.container h2 {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  margin-top: 20%;
+}
+.color {
+  color: hsl(205, 78%, 60%);
+}
