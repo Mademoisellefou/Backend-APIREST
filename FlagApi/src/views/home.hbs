@@ -1,0 +1,8 @@
+<h1>Corona VirusCountry Wise Data:</h1>
+{{#each info as | val key |}}
+<h2 style="text-align: center;">{{val.country}}</h2>
+<h3 style="text-align: center;" class="text-warning">TOTAL CASES: {{val.cases}}</h3>
+<h3 style="text-align: center;" class="text-success">TOTAL RECOVERED: {{val.recovered}}</h3>
+<h3 style="text-align: center;" class="text-danger">TOTAL DEATHS: {{val.deaths}}</h3>
+<img src="{{ val.countryInfo.flag }}" alt="" class="center">
+{{/each}}
