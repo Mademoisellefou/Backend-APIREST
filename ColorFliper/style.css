@@ -1,3 +1,4 @@
+/* ===================================random generator */
 main {
   min-height: calc(100vh-3rem);
   display: grid;
@@ -15,4 +16,87 @@ main {
 }
 .color {
   color: hsl(205, 78%, 60%);
+}
+/* ===================================grid */
+#service{
+  min-height: 100vw;
+}
+.service-container{
+  max-width: 90vw;
+  margin: 0 auto;
+  color: aliceblue;
+}
+.service-item{
+  position: relative;
+  border: 2px solid red;
+  overflow: hidden;
+  padding: 80px;
+}
+.service-item-white{
+  background-color: rosybrown;
+}
+
+.service-item-black{
+  background-color:royalblue;
+}
+.front-text{
+text-align: center;
+transition: transform 2s;
+}
+.back-text {
+  position: absolute;
+  bottom: -19em;
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+  transition: bottom 2s;
+  padding: 5px 0;
+}
+.service-item:hover .front-text{
+transform: translateY(-200px);
+}
+.service-item:hover .back-text{
+  bottom: 0;
+}
+@media screen and (min-width: 770px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .services-container .service-item:nth-of-type(1) {
+    order: 1;
+  }
+  .services-container .service-item:nth-of-type(2) {
+    order: 2;
+  }
+
+}
+#project{
+  min-width: 100vw;
+}
+.project-container{
+max-width: 90vw;
+margin: 0 auto;
+}
+article{
+  padding: 80px;
+  border: 2px solid hotpink;
+}
+/* ===================================game*/
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  height: 312px;
+  width: 416px;
+}
+.grid img{
+  margin: 2px;
+}
+.flip {
+background-color:red;
+  transform: rotateY(180deg);
 }

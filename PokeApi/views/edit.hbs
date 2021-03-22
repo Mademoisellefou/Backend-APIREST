@@ -1,0 +1,15 @@
+<h2>Update Pokemon Informat</h2>
+<main>
+    <h3>Help usmaintain our listing</h3>
+    <p>See somethingwrong with list</p>
+    <form nethod="POST" class="form" action="/pokemon{{npn}}?_method=Put">
+        <label for="npm">National Pokemon Number:</label>
+        <input name="npn" value="{{npn}}">
+    </form>
+</main>
+<aside>
+    <form class="form" action="/pokemon/{{npn}}?_method=Delete" method="POST">
+        <input type="submit" value="Delete Listing">
+    </form>
+</aside>
+<a href="/pokemon/{{npn}}">Back</a>

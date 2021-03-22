@@ -1,0 +1,47 @@
+<div id="pokedex">
+    <div id="top-dots">
+        <div id="main-dot"></div>
+        <div id="tiny-dot-one"></div>
+        <div id="tiny-dot-two"></div>
+        <div id="tiny-dot-three"></div>
+    </div>
+    <div id="display-pokemon">
+        <div>
+            <div class="tiny-dots"></div>
+            <div class="tiny-dots"></div>
+        </div>
+        <div>
+            <img src="{{imageUrl}}" alt="{{name}}">
+        </div>
+        <div>
+            <div id="pokemon-display-bottom">
+                <div id="large-dot"></div>
+                <div id="vent"></div>
+            </div>
+        </div>
+    </div>
+    <h2 id="display-name"> #{{npn}} : {{name}} </h2>
+
+    <main id="display-info">
+
+        <section>
+            <p> Type(s): {{typeOne}} {{typeTwo}} </p>
+            <p> Found in the {{region}} region. </p>
+        </section>
+
+        <p>
+            {{description}}
+        </p>
+
+    </main>
+
+    <div id="bottom-buttons">
+        <div id="blue-circle"></div> <button id="green-button"></button> <button id="red-button"></button>
+        <div><img id="button-cross" src="/buttoncross.png" alt="button" /></div>
+    </div>
+
+    <footer>
+        <a href="/pokemon/{{npn}}/edit">Edit this Listening</a>
+    </footer>
+
+</div>
