@@ -1,0 +1,21 @@
+<h1>QUIZ</h1>
+<% if(question){%>
+        <form action="/" method="POST" >
+        <h3><%= question.question %></h3>
+        <ul>
+        <li><%= question.a %>
+        <input value='a' id="checkbox" type="checkbox" name="response">
+         <br>
+        </li>
+        <li><%= question.b %>
+        <input value='b' id="checkbox" type="checkbox" name="response">
+            <br>
+        </li>
+        <li><%= question.c %>
+        <input value='c' id="checkbox" type="checkbox" name="response">
+            <br>
+        </li>
+        </ul>
+        <button type="submit">send</button> 
+    </form>
+<%} %>
